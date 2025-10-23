@@ -14,12 +14,11 @@ jobs:
       - name: Install uv
         uses: astral-sh/setup-uv@v6
 
-      - name: Install script dependencies
-        working-directory: .github/scripts/generate_civ_settlements
-        run: uv sync
-
       - name: Run settlements generation script
-        run: uv run .github/scripts/generate_civ_settlements/main.py
+        run: |
+          cd .github/scripts/generate_civ_settlements
+          uv sync
+          uv run main.py
 
       - name: Get timestamp for branch name
         id: time
