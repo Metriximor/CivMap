@@ -1,0 +1,45 @@
+name: Generate Civilization Settlements
+
+on:
+  workflow_dispatch:
+
+jobs:
+  generate-settlements:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Install uv
+        uses: astral-sh/setup-uv@v6
+
+      - name: Run settlements generation script
+        run: |
+          uv run .github/scripts/generate_civ_settlements/main.py
+
+      - name: Get timestamp for branch name
+        id: time
+        run: echo "branch_suffix=$(date +'%Y-%m-%d-%H-%M-%S')" >> $GITHUB_ENV
+
+      - name: Create and commit changes
+        run: |
+          BRANCH="feature/settlements-${{ env.branch_suffix }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add .github/scripts/output.json
+          git commit -m "Add generated settlements (${{ env.branch_suffix }})"
+          git push origin "$BRANCH"
+
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v6
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          branch: feature/settlements-${{ env.branch_suffix }}
+          base: main
+          title: "Add generated settlements (${{ env.branch_suffix }})"
+          body: |
+            This PR adds the latest generated settlements output.
+
+            - Generated at: `${{ env.branch_suffix }}`
