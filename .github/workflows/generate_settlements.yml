@@ -40,7 +40,7 @@ jobs:
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
           branch: feature/settlements-${{ env.branch_suffix }}
-          base: main
+          base: master
           title: "Add generated settlements (${{ env.branch_suffix }})"
           body: |
             This PR adds the latest generated settlements output.
