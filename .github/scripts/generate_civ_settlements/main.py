@@ -169,7 +169,7 @@ def generate_file_contents(features: Iterator[SettlementData]) -> dict:
             }
         ],
         "features": StreamArray(
-            feature.dict(exclude_none=True, by_alias=True) for feature in features
+            feature.model_dump(exclude_none=True, by_alias=True) for feature in features
         ),
     }
 
