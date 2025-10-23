@@ -22,7 +22,7 @@ jobs:
 
       - name: Get timestamp for branch name
         id: time
-        run: echo "branch_suffix=$(date +'%Y-%m-%d-%H-%M-%S')" >> $GITHUB_ENV
+        run: echo "branch_suffix=$(date +'%Y-%m-%dT%H_%M_%S')" >> $GITHUB_ENV
 
       - name: Create and commit changes
         run: |
@@ -30,7 +30,7 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
           git checkout -b "$BRANCH"
-          mv .github/scripts/CivMCSettlements.json CivMCSettlements.json
+          mv CivMCSettlements.json ../../CivMCSettlements.json
           git add CivMCSettlements.json
           git commit -m "Add generated settlements (${{ env.branch_suffix }})"
           git push origin "$BRANCH"
