@@ -7,6 +7,7 @@ jobs:
   generate-settlements:
     permissions:
       contents: write
+      pull-requests: write
     runs-on: ubuntu-latest
 
     steps:
@@ -22,28 +23,13 @@ jobs:
           uv sync
           uv run main.py
 
-      - name: Get timestamp for branch name
-        id: time
-        run: echo "branch_suffix=$(date +'%Y-%m-%dT%H_%M_%S')" >> $GITHUB_ENV
-
-      - name: Create and commit changes
-        run: |
-          BRANCH="feature/settlements-${{ env.branch_suffix }}"
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
-          git checkout -b "$BRANCH"
-          mv .github/scripts/generate_civ_settlements/CivMCSettlements.json ./CivMCSettlements.json
-          git add CivMCSettlements.json
-          git status
-          git commit -m "Update generated settlements (${{ env.branch_suffix }})"
-          git push -u origin "$BRANCH"
-
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v6
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
-          branch: feature/settlements-${{ env.branch_suffix }}
-          base: master
+          branch: feature/settlements-
+          branch-suffix: timestamp
+          commit-message: "Update generated settlements (${{ env.branch_suffix }})"
           title: "Add generated settlements (${{ env.branch_suffix }})"
           body: |
             This PR adds the latest generated settlements output.
