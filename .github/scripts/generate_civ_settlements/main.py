@@ -9,9 +9,7 @@ from json import dumps
 
 class SettlementData(BaseModel):
     # Name,x,z,Nation,Contact,image,image_album,Discord,Web,Wiki,Symbol,Visitors,Zoom Visibility,id,Notes,Nickname
-    name: str = Field(
-        alias="Name",
-    )
+    name: str = Field(alias="Name")
     x: int
     z: int
     nation: str = Field(alias="Nation")
