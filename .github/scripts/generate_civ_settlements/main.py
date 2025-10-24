@@ -4,7 +4,7 @@ from io import StringIO
 from pydantic import BaseModel, Field, field_validator
 from typing import Optional
 from collections.abc import Iterator
-from json import dumps
+from json import dumps, loads
 
 
 class SettlementData(BaseModel):
@@ -21,7 +21,7 @@ class SettlementData(BaseModel):
     wiki: Optional[str] = Field(None, alias="Wiki")
     symbol: Optional[str] = Field(None, alias="Symbol")
     visitors: Optional[str] = Field(None, alias="Visitors")
-    zoom_visibility: Optional[str] = Field(None, alias="Zoom Visibility")
+    zoom_visibility: Optional[int] = Field(None, alias="Zoom Visibility")
     id: int = None
     notes: Optional[str] = Field(None, alias="Notes")
     nickname: Optional[str] = Field(None, alias="Nickname")
@@ -58,7 +58,7 @@ def download_sheet() -> Iterator[str]:
     return (line.decode('utf-8') for line in response.iter_lines())
 
 
-def parse_google_sheet_data(file: StringIO) -> Iterator[SettlementData]:
+def parse_google_sheet_data(file: Iterator[str]) -> Iterator[SettlementData]:
     parsed_count = 0
     parsing_errors = 0
     # Skips the first 5 metadata lines
@@ -97,79 +97,10 @@ def parse_google_sheet_data(file: StringIO) -> Iterator[SettlementData]:
 
 
 def generate_file_contents(features: Iterator[SettlementData]) -> dict:
-    return {
-        "name": "Settlements",
-        "id": "62da2fc3-60ba-49a4-898b-817051e47d9d",
-        "info": {"version": "3.0.0-beta3"},
-        "presentations": [
-            {
-                "name": "Settlements",
-                "style_base": {
-                    "color": {
-                        "default": "#ffcc77",
-                        "feature_key": "Zoom Visibility",
-                        "categories": {},
-                    },
-                    "icon_size": {
-                        "default": 16,
-                        "feature_key": "Zoom Visibility",
-                        "categories": {"1": 20, "2": 18, "3": 14, "4": 12, "5": 10},
-                    },
-                    "icon": "circle",
-                    "label": "$Name",
-                    "opacity": 0,
-                    "stroke_color": "#000000",
-                    "stroke_width": {
-                        "default": 2,
-                        "feature_key": "Zoom Visibility",
-                        "categories": {},
-                    },
-                },
-                "style_highlight": {
-                    "opacity": 1,
-                    "stroke_color": "#ff0000",
-                    "stroke_width": 2,
-                },
-                "zoom_styles": {
-                    "-6": {
-                        "label": {
-                            "default": "",
-                            "feature_key": "Zoom Visibility",
-                            "categories": {"1": "$Nickname"},
-                        },
-                        "opacity": {
-                            "default": 0,
-                            "feature_key": "Zoom Visibility",
-                            "categories": {"1": 1, "2": 1},
-                        },
-                    },
-                    "-4": {
-                        "label": {
-                            "default": "",
-                            "feature_key": "Zoom Visibility",
-                            "categories": {"1": "$Name", "2": "$Name"},
-                        },
-                        "opacity": {
-                            "default": 0,
-                            "feature_key": "Zoom Visibility",
-                            "categories": {"1": 1, "2": 1, "3": 1},
-                        },
-                    },
-                    "-3": {
-                        "opacity": {
-                            "default": 0,
-                            "feature_key": "Zoom Visibility",
-                            "categories": {"1": 1, "2": 1, "3": 1},
-                        }
-                    },
-                    "-1": {"opacity": 1},
-                },
-            }
-        ],
-        "features": StreamArray(
-            feature.model_dump(exclude_none=True, by_alias=True) for feature in features
-        ),
-    }
+    with open("settlements_config.json", "r") as settlements_config_file:
+        settlement_config = loads(settlements_config_file.read())
+        settlement_config["features"] = StreamArray(feature.model_dump(exclude_none=True, by_alias=True) for feature in features)
+        return settlement_config
 
 
 def write_to_output_settlements_file(settlements: Iterator[SettlementData]):
