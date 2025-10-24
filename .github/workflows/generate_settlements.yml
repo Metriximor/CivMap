@@ -5,6 +5,8 @@ on:
 
 jobs:
   generate-settlements:
+    permissions:
+      contents: write
     runs-on: ubuntu-latest
 
     steps:
@@ -32,17 +34,18 @@ jobs:
           git checkout -b "$BRANCH"
           mv .github/scripts/generate_civ_settlements/CivMCSettlements.json ./CivMCSettlements.json
           git add CivMCSettlements.json
+          git status
           git commit -m "Update generated settlements (${{ env.branch_suffix }})"
-          git push origin "$BRANCH"
+          git push -u origin "$BRANCH"
 
-      - name: Create Pull Request
-        uses: peter-evans/create-pull-request@v6
-        with:
-          token: ${{ secrets.GITHUB_TOKEN }}
-          branch: feature/settlements-${{ env.branch_suffix }}
-          base: master
-          title: "Add generated settlements (${{ env.branch_suffix }})"
-          body: |
-            This PR adds the latest generated settlements output.
+      # - name: Create Pull Request
+      #   uses: peter-evans/create-pull-request@v6
+      #   with:
+      #     token: ${{ secrets.GITHUB_TOKEN }}
+      #     branch: feature/settlements-${{ env.branch_suffix }}
+      #     base: master
+      #     title: "Add generated settlements (${{ env.branch_suffix }})"
+      #     body: |
+      #       This PR adds the latest generated settlements output.
 
-            - Generated at: `${{ env.branch_suffix }}`
+      #       - Generated at: `${{ env.branch_suffix }}`
