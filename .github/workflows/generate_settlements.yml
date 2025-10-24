@@ -38,4 +38,4 @@ jobs:
           body: |
             This PR adds the latest generated settlements output.
 
-            - Generated at: `${{ env.branch_suffix }}`
+            - Generated at: `${{ env.timestamp }}`
