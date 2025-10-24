@@ -46,16 +46,16 @@ class StreamArray(list):
         return 1
 
 
-def download_sheet() -> StringIO:
+def download_sheet() -> Iterator[str]:
     SHEET_ID = "1myQi-Y6-asM3UkoqUpDEAJSPvYiaOhx-oy7UthgweUk"
     SHEET_NAME = "Settlements"
 
     # Google Sheets CSV export link
     url = f"https://docs.google.com/spreadsheets/d/{SHEET_ID}/gviz/tq?tqx=out:csv&sheet={SHEET_NAME}"
 
-    response = get(url)
+    response = get(url, stream=True)
     response.raise_for_status()
-    return StringIO(response.text)
+    return (line.decode('utf-8') for line in response.iter_lines())
 
 
 def parse_google_sheet_data(file: StringIO) -> Iterator[SettlementData]:
