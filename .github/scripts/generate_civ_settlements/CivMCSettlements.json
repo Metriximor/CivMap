@@ -3854,6 +3854,34 @@
             "Zoom Visibility": 3,
             "id": 513,
             "Notes": "Roseta's free build town"
+        },
+        {
+            "Name": "Odeis",
+            "x": -6808,
+            "z": -2129,
+            "Nation": "Sovia, Icenia",
+            "Contact": "JustMicwa",
+            "image": "https://imgur.com/a/etAUbAm",
+            "Discord": "https://discord.gg/eUSApATu",
+            "Wiki": "https://civwiki.org/wiki/Odeis",
+            "Visitors": "welcome",
+            "Zoom Visibility": 3,
+            "id": 514,
+            "Notes": "A really good monarchy"
+        },
+        {
+            "Name": "The Peninsula",
+            "x": -3546,
+            "z": -49,
+            "Nation": "The Commonwealth",
+            "Contact": "Zeologue",
+            "Discord": "https://discord.gg/mYhrzAHa",
+            "Wiki": "https://civwiki.org/wiki/The_Commonwealth_(CivMC)",
+            "Visitors": "welcome",
+            "Zoom Visibility": 3,
+            "id": 515,
+            "Notes": "Borough of the Commonwealth",
+            "Nickname": "The Pen"
         }
     ]
 }
