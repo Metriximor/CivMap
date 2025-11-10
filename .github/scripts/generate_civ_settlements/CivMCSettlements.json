@@ -829,13 +829,12 @@
             "Name": "Kallopolis",
             "x": -921,
             "z": -3528,
-            "Nation": "Columbia",
-            "Contact": "shadedoom",
+            "Nation": "Apollos",
+            "Contact": "Lasady, shadedoom",
             "Visitors": "ask beforehand",
             "Zoom Visibility": 3,
             "id": 55,
-            "Notes": "Former capital of Kallos",
-            "Nickname": "Kallos"
+            "Notes": "Former capital of Kallos"
         },
         {
             "Name": "Lugdunum",
@@ -1853,12 +1852,12 @@
             "Name": "Providence",
             "x": -1686,
             "z": -4408,
-            "Nation": "Columbia",
-            "Contact": "shadedoom",
+            "Nation": "Apollos",
+            "Contact": "Lasady, shadedoom",
             "Visitors": "ask beforehand",
             "Zoom Visibility": 4,
             "id": 138,
-            "Notes": "Ruin",
+            "Notes": "Former capital of RI",
             "Nickname": "RI"
         },
         {
@@ -3977,6 +3976,50 @@
             "Zoom Visibility": 4,
             "id": 523,
             "Notes": "Three island archipelago with statues and lighthouses in the middle of the Medi Sea"
+        },
+        {
+            "Name": "Apoland",
+            "x": -1423,
+            "z": -3576,
+            "Nation": "Apollos",
+            "Contact": "shadedoom, Lasady",
+            "Visitors": "welcome",
+            "Zoom Visibility": 3,
+            "id": 524,
+            "Notes": "Capital of Apollos"
+        },
+        {
+            "Name": "Melcour",
+            "x": -2350,
+            "z": -4400,
+            "Nation": "Apollos",
+            "Contact": "shadedoom, Lasady",
+            "Visitors": "welcome",
+            "Zoom Visibility": 3,
+            "id": 525,
+            "Notes": "Former capital of Arnen",
+            "Nickname": "Arnen"
+        },
+        {
+            "Name": "Fartopia",
+            "x": -1700,
+            "z": -4955,
+            "Nation": "Apollos",
+            "Contact": "shadedoom, Lasady",
+            "Visitors": "welcome",
+            "Zoom Visibility": 3,
+            "id": 526,
+            "Notes": "Former settlement in RI"
+        },
+        {
+            "Name": "Beinport",
+            "x": -995,
+            "z": -5500,
+            "Nation": "Apollos",
+            "Contact": "beinbean13, shadedoom, Lasady",
+            "Visitors": "ask beforehand",
+            "Zoom Visibility": 3,
+            "id": 527
         }
     ]
 }
