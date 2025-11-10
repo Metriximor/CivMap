@@ -1331,17 +1331,6 @@
             "Notes": "Capital of Soderrike, Reconstruction Zone"
         },
         {
-            "Name": "Axochitlan",
-            "x": 7422,
-            "z": -1430,
-            "Nation": "Yoahtl",
-            "Contact": "Nukinmouse01",
-            "Visitors": "welcome",
-            "Zoom Visibility": 2,
-            "id": 517,
-            "Notes": "Suburbs of Altepetl"
-        },
-        {
             "Name": "Kobylinski",
             "x": 6956,
             "z": -1431,
@@ -3906,14 +3895,88 @@
             "id": 516
         },
         {
+            "Name": "Axochitlan",
+            "x": 7422,
+            "z": -1430,
+            "Nation": "Yoahtl",
+            "Contact": "Nukinmouse01",
+            "Visitors": "welcome",
+            "Zoom Visibility": 2,
+            "id": 517,
+            "Notes": "Suburbs of Altepetl"
+        },
+        {
             "Name": "Piave",
             "x": 7631,
             "z": 3235,
             "Nation": "Ruby",
             "Contact": "TippyShippy, Lord_Pancakes, thinker33",
             "Discord": "https://discord.com/invite/ZE9bEH9DMv",
-            "Zoom Visibility": 4,
+            "Visitors": "welcome",
+            "Zoom Visibility": 3,
             "id": 518
+        },
+        {
+            "Name": "New Ipta/ Gran Pizdea",
+            "x": 4970,
+            "z": -6195,
+            "Nation": "Aspasia & Warmia",
+            "Contact": "1.11111E+15",
+            "Discord": "https://discord.gg/HBBPezuYPt",
+            "Wiki": "https://civwiki.org/wiki/Warmia",
+            "Visitors": "ask beforehand",
+            "Zoom Visibility": 2,
+            "id": 519,
+            "Notes": "Aspasian territory under Warmian control",
+            "Nickname": "Pizdea/Ipta"
+        },
+        {
+            "Name": "Rozia",
+            "x": 9367,
+            "z": 2686,
+            "Nation": "Lusitania",
+            "Contact": "Metriximor",
+            "Discord": "https://discord.gg/wKPVCB9",
+            "Visitors": "welcome",
+            "Zoom Visibility": 3,
+            "id": 520,
+            "Notes": "Formerly owned by MrKibbles"
+        },
+        {
+            "Name": "Squidward Isles",
+            "x": 7009,
+            "z": 4700,
+            "Nation": "Lusitania",
+            "Contact": "Metriximor, Banyough",
+            "Discord": "https://discord.gg/wKPVCB9",
+            "Visitors": "welcome",
+            "Zoom Visibility": 4,
+            "id": 521,
+            "Notes": "Looks like the Bold and Brash squidward painting"
+        },
+        {
+            "Name": "Cascais",
+            "x": 8443,
+            "z": 4586,
+            "Nation": "Lusitania",
+            "Contact": "Metriximor, Banyough",
+            "Discord": "https://discord.gg/wKPVCB9",
+            "Visitors": "ask beforehand",
+            "Zoom Visibility": 3,
+            "id": 522,
+            "Notes": "Former Kallosian Vault. Under Decomissioning by Lusitan Authorities"
+        },
+        {
+            "Name": "Açores Archipelago",
+            "x": 7637,
+            "z": 4806,
+            "Nation": "Lusitania",
+            "Contact": "Metriximor, Banyough",
+            "Discord": "https://discord.gg/wKPVCB9",
+            "Visitors": "welcome",
+            "Zoom Visibility": 4,
+            "id": 523,
+            "Notes": "Three island archipelago with statues and lighthouses in the middle of the Medi Sea"
         }
     ]
 }
