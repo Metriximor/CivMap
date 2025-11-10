@@ -829,13 +829,12 @@
             "Name": "Kallopolis",
             "x": -921,
             "z": -3528,
-            "Nation": "Columbia",
-            "Contact": "shadedoom",
+            "Nation": "Apollos",
+            "Contact": "Lasady, shadedoom",
             "Visitors": "ask beforehand",
             "Zoom Visibility": 3,
             "id": 55,
-            "Notes": "Former capital of Kallos",
-            "Nickname": "Kallos"
+            "Notes": "Former capital of Kallos"
         },
         {
             "Name": "Lugdunum",
@@ -1853,12 +1852,12 @@
             "Name": "Providence",
             "x": -1686,
             "z": -4408,
-            "Nation": "Columbia",
-            "Contact": "shadedoom",
+            "Nation": "Apollos",
+            "Contact": "Lasady, shadedoom",
             "Visitors": "ask beforehand",
             "Zoom Visibility": 4,
             "id": 138,
-            "Notes": "Ruin",
+            "Notes": "Former capital of RI",
             "Nickname": "RI"
         },
         {
