@@ -1331,6 +1331,17 @@
             "Notes": "Capital of Soderrike, Reconstruction Zone"
         },
         {
+            "Name": "Axochitlan",
+            "x": 7422,
+            "z": -1430,
+            "Nation": "Yoahtl",
+            "Contact": "Nukinmouse01",
+            "Visitors": "welcome",
+            "Zoom Visibility": 2,
+            "id": 517,
+            "Notes": "Suburbs of Altepetl"
+        },
+        {
             "Name": "Kobylinski",
             "x": 6956,
             "z": -1431,
@@ -3881,6 +3892,28 @@
             "id": 515,
             "Notes": "Borough of the Commonwealth",
             "Nickname": "The Pen"
+        },
+        {
+            "Name": "Palmetto Island",
+            "x": -5452,
+            "z": -343,
+            "Nation": "Palmetto",
+            "Contact": "lalibo",
+            "image": "lalibo",
+            "Wiki": "https://civwiki.org/wiki/Republic_of_Ruby",
+            "Visitors": "welcome",
+            "Zoom Visibility": 4,
+            "id": 516
+        },
+        {
+            "Name": "Piave",
+            "x": 7631,
+            "z": 3235,
+            "Nation": "Ruby",
+            "Contact": "TippyShippy, Lord_Pancakes, thinker33",
+            "Discord": "https://discord.com/invite/ZE9bEH9DMv",
+            "Zoom Visibility": 4,
+            "id": 518
         }
     ]
 }
