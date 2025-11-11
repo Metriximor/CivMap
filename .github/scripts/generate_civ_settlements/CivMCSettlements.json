@@ -2782,18 +2782,18 @@
             "Name": "Kardovia",
             "x": -8140,
             "z": -140,
-            "Nation": "Tortugán (Mercutio)",
-            "Contact": "logonts",
+            "Nation": "Infrapontem",
+            "Contact": "OnionsPlease",
             "Zoom Visibility": 3,
             "id": 215,
-            "Notes": "Capital of the former Kaota. Formerly known as Kleygate"
+            "Notes": "Capital of the Kaowta region. Formerly known as Kleygate."
         },
         {
             "Name": "Fortnum",
             "x": -8280,
             "z": -270,
-            "Nation": "Tortugán (Mercutio)",
-            "Contact": "logonts",
+            "Nation": "Infrapontem",
+            "Contact": "OnionsPlease",
             "Zoom Visibility": 4,
             "id": 216,
             "Notes": "Coastal town founded by Respein."
@@ -2807,7 +2807,7 @@
             "Discord": "https://discord.gg/tc6hdQPht3",
             "Wiki": "https://civwiki.org/wiki/Infrapontem",
             "Symbol": "https://static.wikitide.net/civwikiwiki/7/71/Infrapontem.png",
-            "Visitors": "ask beforehand",
+            "Visitors": "welcome",
             "Zoom Visibility": 4,
             "id": 217,
             "Notes": "Jungle farm settlement founded by Respein.",
@@ -3138,7 +3138,7 @@
             "Notes": "Replaces previous town name of Akala"
         },
         {
-            "Name": "Infrapontem Capital Territory",
+            "Name": "Pomerium",
             "x": -8495,
             "z": 402,
             "Nation": "Infrapontem",
@@ -4020,6 +4020,17 @@
             "Visitors": "ask beforehand",
             "Zoom Visibility": 3,
             "id": 527
+        },
+        {
+            "Name": "Staticus City",
+            "x": -8360,
+            "z": 360,
+            "Nation": "Infrapontem",
+            "Contact": "OnionsPlease",
+            "Visitors": "welcome",
+            "Zoom Visibility": 4,
+            "id": 528,
+            "Notes": "Small newfriend community next to Pomerium"
         }
     ]
 }
