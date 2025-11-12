@@ -989,18 +989,18 @@
             "id": 67
         },
         {
-            "Name": "Białystok",
+            "Name": "Białystok Metropolitan Area",
             "x": -1200,
             "z": -2222,
-            "Nation": "Volterra",
-            "Contact": "SeldomSh0ck",
-            "Discord": "Discord",
-            "Wiki": "https://civwiki.org/wiki/Volterra",
+            "Nation": "Warmia",
+            "Contact": "nasion, Pawel_xD",
+            "Discord": "https://discord.gg/HBBPezuYPt",
+            "Wiki": "https://civwiki.org/wiki/Warmia",
             "Visitors": "welcome",
-            "Zoom Visibility": 3,
+            "Zoom Visibility": 1,
             "id": 68,
-            "Notes": "Former capital of Warmia",
-            "Nickname": "Warmia"
+            "Notes": "Separated into 4 districts - Białystok Capital Territory, Warmian Lidzbark, Kętrzyn ",
+            "Nickname": "Szkolna 17"
         },
         {
             "Name": "Blockchainistan",
@@ -1271,11 +1271,11 @@
             "Nickname": "Ichi"
         },
         {
-            "Name": "Jarquia",
-            "x": 8061,
-            "z": -2731,
-            "Nation": "Aragonia (Khalkedonia)",
-            "Contact": "Lolxd3527",
+            "Name": "Maius",
+            "x": 7881,
+            "z": -2612,
+            "Nation": "Maius",
+            "Contact": "Sublime",
             "Visitors": "welcome",
             "Zoom Visibility": 3,
             "id": 90,
@@ -3920,7 +3920,7 @@
             "x": 4970,
             "z": -6195,
             "Nation": "Aspasia & Warmia",
-            "Contact": "1.11111E+15",
+            "Contact": "nasion",
             "Discord": "https://discord.gg/HBBPezuYPt",
             "Wiki": "https://civwiki.org/wiki/Warmia",
             "Visitors": "ask beforehand",
@@ -4031,6 +4031,34 @@
             "Zoom Visibility": 4,
             "id": 528,
             "Notes": "Small newfriend community next to Pomerium"
+        },
+        {
+            "Name": "Masuria",
+            "x": -1535,
+            "z": -2455,
+            "Nation": "Warmia",
+            "Contact": "nasion",
+            "Discord": "https://discord.gg/HBBPezuYPt",
+            "Wiki": "https://civwiki.org/wiki/Warmia",
+            "Visitors": "welcome",
+            "Zoom Visibility": 2,
+            "id": 530,
+            "Notes": "New town/territory led by Baron_of_Stupid",
+            "Nickname": "Mazury"
+        },
+        {
+            "Name": "Cahradas  Special Autonomous Zone ",
+            "x": -1388,
+            "z": -2195,
+            "Nation": "Warmia",
+            "Contact": "Pawel_xD, nasion",
+            "Discord": "https://discord.gg/HBBPezuYPt",
+            "Wiki": "https://civwiki.org/wiki/Warmia",
+            "Visitors": "ask beforehand",
+            "Zoom Visibility": 2,
+            "id": 531,
+            "Notes": "Cahradas Special Autonomous Zone governed by Pawel_xD, has special privileges of self-governance ",
+            "Nickname": "Cahradas"
         }
     ]
 }
