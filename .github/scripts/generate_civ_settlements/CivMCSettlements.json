@@ -3937,9 +3937,6 @@
             "Name": "Squidward Isles",
             "x": 7009,
             "z": 4700,
-            "Nation": "Lusitania",
-            "Contact": "Metriximor, Banyough",
-            "Discord": "https://discord.gg/wKPVCB9",
             "Visitors": "welcome",
             "Zoom Visibility": 4,
             "id": 521,
@@ -4033,7 +4030,7 @@
             "Discord": "https://discord.gg/HBBPezuYPt",
             "Wiki": "https://civwiki.org/wiki/Warmia",
             "Visitors": "welcome",
-            "Zoom Visibility": 2,
+            "Zoom Visibility": 3,
             "id": 530,
             "Notes": "New town/territory led by Baron_of_Stupid",
             "Nickname": "Mazury"
@@ -4047,7 +4044,7 @@
             "Discord": "https://discord.gg/HBBPezuYPt",
             "Wiki": "https://civwiki.org/wiki/Warmia",
             "Visitors": "ask beforehand",
-            "Zoom Visibility": 2,
+            "Zoom Visibility": 3,
             "id": 531,
             "Notes": "Cahradas Special Autonomous Zone governed by Pawel_xD, has special privileges of self-governance ",
             "Nickname": "Cahradas"
