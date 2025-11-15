@@ -3829,7 +3829,7 @@
             "Contact": "_Oceanstar, Flameoguide",
             "Discord": "https://discord.gg/AuXrHQ6zYX",
             "Visitors": "welcome",
-            "Zoom Visibility": 2,
+            "Zoom Visibility": 3,
             "id": 512,
             "Notes": "Former capital of Edius; largest town in Roseta, Yoahtl"
         },
@@ -3880,7 +3880,6 @@
             "Nation": "Palmetto",
             "Contact": "lalibo",
             "image": "https://i.imgur.com/Zu8y2XM.png",
-            "Wiki": "https://civwiki.org/wiki/Republic_of_Ruby",
             "Visitors": "welcome",
             "Zoom Visibility": 4,
             "id": 516
