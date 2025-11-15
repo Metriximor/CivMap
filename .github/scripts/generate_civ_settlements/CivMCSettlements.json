@@ -362,19 +362,18 @@
             "Nickname": "Arlington"
         },
         {
-            "Name": "Augustan Reserve",
+            "Name": "Old Augusta",
             "x": 3052,
             "z": 2234,
             "Nation": "Accra",
-            "Contact": "Forged_tk, sadchamp",
-            "Discord": "https://discord.gg/fhPudAKX3e",
-            "Wiki": "https://civwiki.org/wiki/Accra",
-            "Symbol": "https://static.wikitide.net/civwikiwiki/1/1d/Accra.png",
+            "Contact": "Flameoguide",
+            "Wiki": "https://civwiki.org/wiki/Mount_Augusta_(CivMC)",
+            "Symbol": "https://static.wikitide.net/civwikiwiki/thumb/3/31/MTAFlag.png/1024px-MTAFlag.png",
             "Visitors": "welcome",
             "Zoom Visibility": 2,
             "id": 22,
-            "Notes": "The Old City and former capital of MTA (under temporary closure for reorganization by Accran territories as of 12/31/24)",
-            "Nickname": "Old City"
+            "Notes": "The former capital of Mt. Augusta. Currently a farming village.",
+            "Nickname": "Old MTA"
         },
         {
             "Name": "Bashkent",
@@ -993,7 +992,7 @@
             "Discord": "https://discord.gg/HBBPezuYPt",
             "Wiki": "https://civwiki.org/wiki/Warmia",
             "Visitors": "welcome",
-            "Zoom Visibility": 1,
+            "Zoom Visibility": 2,
             "id": 68,
             "Notes": "Separated into 4 districts - Białystok Capital Territory, Warmian Lidzbark, Kętrzyn ",
             "Nickname": "Warmia"
