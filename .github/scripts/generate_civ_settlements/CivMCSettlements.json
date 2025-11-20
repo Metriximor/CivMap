@@ -365,7 +365,7 @@
             "Name": "Old Augusta",
             "x": 3052,
             "z": 2234,
-            "Nation": "Accra",
+            "Nation": "Village of Old Augusta",
             "Contact": "Flameoguide",
             "Wiki": "https://civwiki.org/wiki/Mount_Augusta_(CivMC)",
             "Symbol": "https://static.wikitide.net/civwikiwiki/thumb/3/31/MTAFlag.png/1024px-MTAFlag.png",
@@ -1960,11 +1960,10 @@
             "z": -2801,
             "Nation": "Estalia (prev. Gang Shi)",
             "Contact": "Jbblocker",
-            "Wiki": "https://civwiki.org/wiki/CivMarket",
             "Visitors": "welcome",
             "Zoom Visibility": 4,
             "id": 149,
-            "Notes": "Site of the former international trading city, CivMarket."
+            "Notes": "Former capital of Gang Shi"
         },
         {
             "Name": "Cape Cocoa",
@@ -3366,8 +3365,10 @@
             "z": 80,
             "Nation": "Estalia",
             "Contact": "Walkers",
+            "Wiki": "https://civwiki.org/wiki/CivMarket",
             "Zoom Visibility": 3,
-            "id": 268
+            "id": 268,
+            "Notes": "Site of the former international trading city, CivMarket."
         },
         {
             "Name": "Erhablee",
